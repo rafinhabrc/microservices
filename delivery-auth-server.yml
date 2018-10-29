@@ -25,12 +25,12 @@ security:
 
 spring:
   datasource:
+    schema: classpath:/sql/schema.sql
     data: classpath:/sql/data.sql
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false
     username: postgres
     password: postgres
-    schema: classpath:/sql/schema.sql
   jpa:
     hibernate:
       ddl-auto: none
